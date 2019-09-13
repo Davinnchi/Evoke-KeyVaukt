@@ -10,6 +10,7 @@ const KeyVaultRoutes = require('./routes/KeyVaultRoutes');
 mongoose.connect(`mongodb://${DB.host}:${DB.port}/${DB.database}`, { useNewUrlParser: true }, (err, con) => {
     if (err) {
         console.log('Error en la conexion');
+        console.log(err);
     } else {
         console.log('Conexion DB Exitosa');
     }
